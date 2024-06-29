@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Comentario</h1>
+        <form id="formulario">
+            <div>
+                <label for="tema">Tema:</label>
+                <input type="text" id="tema" name="tema" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="coment">Comentario:</label>
+                <textarea id="comentario" name="comentario" required rows="4" cols="50"></textarea>
+                <button type="submit">Publicar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contenedor">
+        <h1>Foros</h1>
+        <label for="temaConver">Buscar tema de conversacion:</label>
+        <input type="text" id="temaConver" name="temaConver" required>
+        <button onclick="getUser()">Buscar</button>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
